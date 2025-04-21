@@ -1,0 +1,27 @@
+### ขอรายการหนังสือทั้งหมด
+GET http://localhost:3000/books
+Content-Type: application/json
+
+###
+
+### ขอรายการหนังสือตามประเภท (genre = Fiction)
+GET http://localhost:3000/books?genre=Fiction
+Content-Type: application/json
+
+###
+
+### ขอรายการหนังสือตามประเภท (genre = Dystopian)
+GET http://localhost:3000/books?genre=Dystopian
+Content-Type: application/json
+
+###
+
+### ขอรายละเอียดหนังสือจาก ID (id = 1)
+GET http://localhost:3000/books/1
+Content-Type: application/json
+
+###
+
+### ทดสอบกรณีไม่พบหนังสือ (id = 99)
+GET http://localhost:3000/books/99
+Content-Type: application/json
